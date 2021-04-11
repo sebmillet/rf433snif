@@ -1,6 +1,6 @@
 // rf433snif.ino
 
-// Sébastien Millet, May 2019, March 2020, March 2021
+// Copyright Sébastien Millet 2019, 2020, 2021
 
 // Raw recording and display of RF433 status switch timings.
 
