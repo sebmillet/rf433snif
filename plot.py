@@ -162,12 +162,12 @@ xy = [[0,0]]
 t=0
 
 for h,l in data:
-   xy.append([t,1])
+   xy.append([t,0])
    t+=h
+   xy.append([t,0])
    xy.append([t,1])
-   xy.append([t,0])
    t+=l
-   xy.append([t,0])
+   xy.append([t,1])
 
 import matplotlib.pyplot as plt 
 
