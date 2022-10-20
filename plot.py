@@ -158,7 +158,7 @@ data = [list(map(int, ( l.split()))) for l in data.strip().replace(',', ' ').spl
 
 data = list(zip(*list(zip(*data))[1:])) # remove 1st column
 
-xy = [[0,0]]
+xy = [[0,1]]
 t=0
 
 for h,l in data:
