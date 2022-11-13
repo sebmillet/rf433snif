@@ -31,8 +31,33 @@ See file schema.fzz (Fritzing format) or schema.png, for a circuit example with
 receiver plugged on D2.
 
 
+Note about interrupts
+---------------------
+
+rf433snif does **NOT** rely on interrupts, therefore the DATA of the RECEIVER
+can be plugged on any digital PIN of the board.
+
+
 Usage
 -----
 
 Compile and upload it and when a signal is received, it'll be printed out.
+
+
+About plot.py
+-------------
+
+This python script (of alex-eri, https://github.com/alex-eri) takes the output
+of rf433snif and renders it as a graph.
+
+The timings output by rf433snif are to be copy/pasted to the top of `plot.py`.
+
+To execute it on my 'Linux Debian 11' I had to run:
+
+```shell
+# Do this one once, to install script' pre-req
+pip3 install matplotlib
+
+python3 plot.py
+```
 
